@@ -43,7 +43,7 @@ public class CustomerRestFormIT {
     @Test
     public void testAInitialCustomerSize() {
         List<Customer> customer = retrieveAllCustomers();
-        assertEquals(customer.size(), 0);
+        assertEquals(customer.size(), 1);
     }
 
     /**
