@@ -32,5 +32,5 @@ jobs:
         app-name: lab13test2
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1CC94A5786BB4B9788BD13AC085291CC }}
-        package: ${{ github.workspace }}/target/restaurant-jar-with-dependencies.jar
+        package: ${{ github.workspace }}/target/*.jar
 
