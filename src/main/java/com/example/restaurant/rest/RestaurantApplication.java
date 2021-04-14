@@ -10,6 +10,7 @@ public class RestaurantApplication extends Application {
   @Override
   public Set<Class<?>> getClasses() {
     Set<Class<?>> set = new HashSet<>();
+    set.add(Home.class);
     set.add(CustomerRestForm.class);
     return set;
   }
