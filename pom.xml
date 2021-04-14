@@ -59,12 +59,10 @@
       <version>${junit.version}</version>  
       <scope>test</scope> 
     </dependency>  
-
-<dependency>
-  <groupId>org.glassfish.jersey.media</groupId>
-  <artifactId>jersey-media-jaxb</artifactId>
-</dependency>    
-
+    <dependency> 
+      <groupId>org.glassfish.jersey.media</groupId>  
+      <artifactId>jersey-media-jaxb</artifactId> 
+    </dependency> 
   </dependencies>  
   <profiles> 
     <profile> 
@@ -121,26 +119,22 @@
             </goals> 
           </execution> 
         </executions> 
-      </plugin>
-
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <executions>
-          <execution>
-            <goals>
-              <goal>repackage</goal>
-            </goals>
-            <configuration>
-              <attach>false</attach>
-              <mainClass>
-                  com.example.restaurant.rest.Main
-              </mainClass>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-
+      </plugin>  
+      <plugin> 
+        <groupId>org.springframework.boot</groupId>  
+        <artifactId>spring-boot-maven-plugin</artifactId>  
+        <executions> 
+          <execution> 
+            <goals> 
+              <goal>repackage</goal> 
+            </goals>  
+            <configuration> 
+              <attach>false</attach>  
+              <mainClass>com.example.restaurant.rest.Main</mainClass> 
+            </configuration> 
+          </execution> 
+        </executions> 
+      </plugin>  
     </plugins> 
   </build> 
 </project>
