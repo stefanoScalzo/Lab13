@@ -59,7 +59,7 @@ public class CustomerRestForm {
     @GET
     @Path("/teapot")
     public Response createCustomer() {
-        return Response.status(418).build();
+        return Response.status(419).build();
     }
 
     /**
