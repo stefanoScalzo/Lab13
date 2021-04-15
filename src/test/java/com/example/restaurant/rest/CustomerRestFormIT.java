@@ -79,6 +79,13 @@ public class CustomerRestFormIT {
         assertEquals(customer.size(), 3);
     }
 
+    @Test
+    public void testEIAmTeapot() {
+        target = ClientBuilder.newClient().target(Main.BASE_URI.resolve("customerform/teapot"));
+        Response res = target.request().get();
+        assertEquals(419, res.getStatus());
+    }
+
     /**
      * Method to retrieve all customers using api call
      * @return

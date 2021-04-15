@@ -54,6 +54,15 @@ public class CustomerRestForm {
     }
 
     /**
+     * return 419
+     */
+    @GET
+    @Path("/teapot")
+    public Response createCustomer() {
+        return Response.status(418).build();
+    }
+
+    /**
      * Meant for replacing customer with specific ID
      * @param id of the customer
      * @param name of the customer
